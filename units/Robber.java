@@ -1,14 +1,7 @@
 package units;
 
-import java.util.ArrayList;
-
-public class Robber extends Warrior{
-  public Robber(String name, int x, int y) {
-    super(name, x, y);
-  }
-
-  @Override
-  public void step(ArrayList<Character> team, ArrayList<Character> team2){
-    Character nearestFoe = findNearest(team);
+public class Robber extends Voin {
+  public Robber(Names name, int row, int col) {
+    super(name, 9, 9, 6, 2, 4, row, col);
   }
 }

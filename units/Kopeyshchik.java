@@ -3,12 +3,8 @@ package units;
 import java.util.ArrayList;
 
 public class Kopeyshchik extends Voin{
-  public Kopeyshchik(String name, int x, int y) {
-    super(name, x, y);
+  public Kopeyshchik(Names name, int row, int col) {
+    super(name, 12, 12, 5, 3, 3, row, col);
   }
 
-  @Override
-  public void step(ArrayList<Character> team, ArrayList<Character> team2){
-    Character nearestFoe = findNearest(team);
-  }
 }

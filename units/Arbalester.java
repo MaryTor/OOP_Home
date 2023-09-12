@@ -1,16 +1,7 @@
 package units;
 
-import java.util.ArrayList;
-
-public class Arbalester extends Bowman{
-  public Arbalester(String name, int x, int y) {
-    super(name, x, y);
+public class Arbalester extends Sniper {
+  public Arbalester(Names name, int row, int col) {
+    super(name, 5, 5, 2,1, 5, 10, 10, row, col);
   }
-
-
-  @Override
-  public void step(ArrayList<Character> team, ArrayList<Character> team2){
-    Character nearestFoe = findNearest(team);
-  }
-
 }

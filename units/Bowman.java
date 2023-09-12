@@ -1,15 +1,7 @@
 package units;
 
-public abstract class Bowman extends Character {
-  protected int range;
-  protected int arrows;
-  public Bowman(String name, int x, int y) {
-    super(name, 5, 5, 3, 2, 4, 4, x, y);
-    this.range = 5;
-    this.arrows = 5;
-  }
-  @Override
-  public String getInfo() {
-    return String.format("%s: hp=%d, ammo=%d", this.name, this.hp, this.arrows);
+public class Bowman extends Sniper {
+  public Bowman(Names name, int row, int col) {
+    super(name, 6, 6, 3, 1, 4, 7, 7, row, col);
   }
 }

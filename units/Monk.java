@@ -3,12 +3,8 @@ package units;
 import java.util.ArrayList;
 
 public class Monk extends Caster{
-  public Monk(String name, int x, int y) {
-    super(name, x, y);
+  public Monk(Names name, int row, int col) {
+    super(name, 5, 5, 3, 2,3, 8, 8, row, col);
   }
 
-  @Override
-  public void step(ArrayList<Character> team, ArrayList<Character> team2){
-    Character nearestFoe = findNearest(team);
-  }
 }

@@ -1,14 +1,9 @@
 package units;
 
-import java.util.ArrayList;
 
 public class Wizard extends Caster{
-  public Wizard(String name, int x, int y) {
-    super(name, x, y);
+  public Wizard(Names name, int row, int col) {
+    super(name, 5, 5, 2, 1,2, 10, 10, row, col);
   }
 
-  @Override
-  public void step(ArrayList<Character> team, ArrayList<Character> team2){
-    Character nearestFoe = findNearest(team);
-  }
 }
